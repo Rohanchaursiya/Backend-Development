@@ -1,0 +1,65 @@
+//----------------Git-------------
+    Git is Version Control System or Distributed Version Control System.
+    It is a tools that helps to track changes.
+    Popular, Free and Open Source, Fast and Scalable.
+    Track the History.
+    Collaborate.
+
+//---------------GitHub------------
+    GitHub allows developers to store and manage their code using git.
+
+// Version Check Command
+    git --Version
+
+// Init commands
+    git init
+    git remote add origin <link>
+    git remote -v   -> to verify remote
+    git branch
+    git branch -m main
+    git push origin main
+
+//Configuring Git
+    git config --global username "My Name"
+    git config -- global user.email "someone@gmail.com"
+    git config --list
+
+// Clone -> Cloning a Repository on our local machine.
+    git clone <git hub repo link>
+
+// Status -> Display the status of the code
+    git Status
+
+// untracked -> New files that git git doesn't yet tracked.
+// Modified -> Changed
+// Unmodified -> Unchanged
+// Staged -> File is ready to commit
+
+// Add -> Adds new or changed files in your working directory to the git staging area.
+    git add <file_name> or git add .
+
+// Commit -> It is the record of the change.
+    git commit -m "commit message"
+
+// Push -> Upload local repo content to remote repo
+    git push origin -main
+
+// Pull -> It is used for pull the remote repo content.
+    git pull origin main
+
+// Branch commands
+    git branch  -> to check all branch
+    git branch -m Main -> to rename branch
+    git checkout -b <new_branch_name> -> creating new branch
+    git checkout <branch_name> -> navigate to this branch
+    git checkout -d <branch_name> -> deleting existing branch
+
+// Merging code
+    Way 1)
+    git diff <branch_name> -> to compare commit branches, files and more.
+    git merge <branch_name> -> to merge 2 branches.
+
+    Way 2)
+    git pull origin main
+
+
