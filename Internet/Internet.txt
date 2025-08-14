@@ -1,0 +1,130 @@
+// How does the Internet Works..?
+    - As a developer, it is important to have a solid understanding of what the internet is and how it works.
+    - It is the foundation upon which most modern software applications are built.
+    - In order to build effective, secure, and scalable applications and services,
+    - you need to have a solid understanding of how the internet works and how to leverage its power and connectivity.
+
+// introduction to the Network
+    - A network is a group of computers or other devices which are connected to each other.
+
+// Introduction to the Internet
+    - The internet is a network of networks.
+    - The Internet is developed in the late 1960s by the United States Department of Defense as a
+    - means of creating a decentralized communication network that could withstand a nuclear attack.
+    - Over the years, it has evolved into a complex and sophisticated network that spans the globe.
+
+// How the Internet Works: An Overview
+    - The internet works by connecting devices and computer systems together using a set of standardized protocols.
+    - These protocols define how information is exchanged between devices and ensure that data is transmitted reliably and securely.
+    - The core of the internet is a global network of interconnected routers.
+    - When you send data over the internet, it is broken up into small packets that are sent from your device to a router.
+    - The router examines the packet and forwards it to the next router in the path towards its destination.
+    - This process continues until the packet reaches its final destination.
+    - To ensure that packets are sent and received correctly,
+    - the internet uses a variety of protocols, including the Internet Protocol (IP) and the Transmission Control Protocol (TCP).
+    - IP is responsible for routing packets to their correct destination,
+    - TCP ensures that packets are transmitted reliably and in the correct order.
+    - there are a wide range of other technologies and protocols that are used to enable communication and data exchange over the internet.
+    including the Domain Name System (DNS), the Hypertext Transfer Protocol (HTTP), and the Secure Sockets Layer/Transport Layer Security (SSL/TLS) protocol.
+
+// Basic Terminology
+    - Packet: A small unit of data that is transmitted over the internet.
+    - Router: A device that directs packets of data between different networks.
+    - IP Address: A unique identifier assigned to each device on a network, used to route data to the correct destination.
+    - Domain Name: A human-readable name that is used to identify a website, such as google.com.
+    - DNS: The Domain Name System is responsible for translating domain names into IP addresses.
+    - HTTP: The Hypertext Transfer Protocol is used to transfer data between a client (such as a web browser) and a server (such as a website).
+    - HTTPS: An encrypted version of HTTP that is used to provide secure communication between a client and server.
+    - SSL/TLS: The Secure Sockets Layer and Transport Layer Security protocols are used to provide secure communication over the internet.
+
+// The Role of protocols in Internet
+    - Protocols play a critical role in enabling communication and data exchange over the internet.
+    - is a set of rules and standards that define how information is exchanged between devices and systems.
+
+    Types of Protocols
+    - IP(Internet Protocol) -> routing packets of data to their correct destination
+    - TCP(Transmission Control Protocol) -> ensure that packets are transmitted reliably and efficiently.
+    - UDP(User Datagram Protocol) -> translate domain names into IP addresses
+    - DNS(Domain Name System) -> transfer data between clients and servers.
+
+// Understanding IP Addresses and Domain Names
+    IP Address
+    - is a unique identifier assigned to each device on a network.
+    - used to route data to the correct destination.
+    - ensure that information is sent to the intended recipient.
+    - typically represented as a series of four numbers separated by periods.
+    - "192.168.1."
+
+    Domain Names
+    - Human-readable names used to identify websites and other internet resources.
+    - translated into IP addresses using the Domain Name System.
+
+    DNS
+    - When you enter a domain name into your web browser.
+    - your computer sends a DNS query to a DNS server.
+    - which returns the corresponding IP address.
+
+// Introduction to HTTP and HTTPS
+    HTTP
+    - Hyper Text Transfer Protocol
+    - used to transfer data between a client and a server.
+    - request to the server.
+    - HTTP response back to the client.
+
+    HTTPS - (HTTP Secure)
+    - more secure version of HTTP.
+    - encrypts the data being transmitted between the client and server using SSL/TLS encryption.
+    - SSL -> Secure Sockets Layer
+    - TLS -> Transport Layer Security.
+
+// Building Applications with TCP/IP
+    - communication protocol used by most internet-based applications and services.
+    - provides a reliable, ordered, and error-checked delivery of data between applications running on different devices.
+
+    Ports
+    - used to identify the application or service running on a device.
+    - each application or service is assigned a unique port number.
+    - allow to sent data to correct destination.
+
+    Sockets
+    - It is a combination of an IP address and Port number.
+    - represent a specific endpoint for communication.
+    - used to establish connections between devices and transfer data between applications.
+
+    Connections
+    - It is established between two sockets when two devices want to communicate with each other.
+    - the devices negotiate various parameters such as the maximum segment size and window size.
+    - which determine how data will be transmitted over the connection.
+
+    Data Transfer
+    - Once connection is established data is transferred between the applications.
+    - Data is typically transmitted in segments.
+    - Each segment containing a sequence number and other metadata to ensure reliable delivery.
+
+    FTP -> File Transfer Protocol
+    SMTP -> Simple Mail Transfer Protocol
+
+// Securing Internet Communication with SSL/TLS
+    - provides secure connections for applications.
+    - Web browser, Email clients, and File Transfer Programs.
+
+    Certificates
+    - SSL/TLS certificates are used to establish trust between the client and server.
+    - They contain information about the identity of the server and are signed by a trusted third party.
+
+    Handshake
+    - During the SSL/TLS handshake process,
+    - The client and server exchange information to negotiate the encryption algorithm and other parameters for the secure connection.
+
+    Encryption
+    - Once the secure connection is established,
+    - Data is encrypted using the agreed-upon algorithm and can be transmitted securely between the client and server.
+
+// The Future: Emerging Trends and Technologies
+
+    - 5G -> latest generation of mobile network technology, offering faster speeds, lower latency, and greater capacity than previous generations.
+    - Internet of Things -> network of physical devices, vehicles, home appliances, and other objects that are connected to the internet and can exchange data.
+    - Artificial Intelligence -> machine learning and natural language processing.
+    - Blockchain -> is a distributed ledger technology that enables secure, decentralized transactions.
+    - Edge computing -> Edge computing refers to the processing and storage of data at the edge of the network, rather than in centralized data centers.
+
