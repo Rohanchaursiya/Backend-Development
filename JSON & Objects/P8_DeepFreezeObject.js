@@ -1,7 +1,15 @@
 function deepFreeze(obj) {
-    if (obj && typeof obj === 'object' && !Object.isFrozen(obj)) {
-        Object.freeze(obj);
-        Object.getOwnPropertyNames(obj).forEach(prop => deepFreeze(obj[prop]));
+    if (obj && typeof obj !== 'object' && !Object.isFrozen(obj)) {
+        return obj;
+    }
+    Object.freeze(obj);
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            const value = obj[key];
+            if (typeof value === 'object' && value) {
+                deepFreeze(value);
+            }
+        }
     }
     return obj;
 }
