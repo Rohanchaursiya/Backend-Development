@@ -1,7 +1,5 @@
 function filterByCriteria(jsonArray, criteria) {
-    return jsonArray.filter(item => {
-        return Object.keys(criteria).every(key => item[key] === criteria[key]);
-    });
+    return jsonArray.filter(item => Object.keys(criteria).every(key => item[key] === criteria[key]));
 }
 
 let jsonArray = [

@@ -1,11 +1,9 @@
 function transformData(jsonArray) {
-    return jsonArray.map(item => {
-        return {
-            id: item.id,
-            fullName: `${item.firstName + " " + item.lastName}`,
-            isActive: item.age < 40 ? 'true' : 'false'
-        };
-    });
+    return jsonArray.map(item => ({
+        id: item.id,
+        fullName: `${item.firstName + " " + item.lastName}`,
+        isActive: item.age < 40 ? 'true' : 'false'
+    }));
 }
 
 let jsonArray = [

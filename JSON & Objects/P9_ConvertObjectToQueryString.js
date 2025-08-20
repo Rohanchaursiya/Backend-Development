@@ -18,11 +18,7 @@ function toQueryString(obj) {
 let obj = {
     name: "John Doe",
     age: 30,
-    hobbies: ["reading", "gaming"],
-    details: {
-        address: "Patna",
-        PIN: "800001"
-    }
+    hobbies: ["reading", "gaming"]
 }
 
 console.log(toQueryString(obj));

@@ -1,10 +1,9 @@
 function filterAndMapArray(arr) {
 
-    const filteredArray = arr.filter(num => num % 2 !== 0);
+    const filteredArray = arr.filter(num => num % 2 !== 0).map(num => num * num);
 
-    const mappedArray = filteredArray.map(num => num * num);
 
-    return mappedArray;
+    return filteredArray;
 }
 
 
