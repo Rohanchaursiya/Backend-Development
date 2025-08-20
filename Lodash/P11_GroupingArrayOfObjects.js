@@ -1,0 +1,10 @@
+const _ = require('lodash');
+
+let data = [
+    { id: 1, name: "John", age: 30 },
+    { id: 2, name: "Jane", age: 25 },
+    { id: 3, name: "Alice", age: 30 }
+];
+
+
+console.log(_.groupBy(data, 'age'));
