@@ -1,9 +1,7 @@
 function groupAndAggregateObjects(objArr) {
-    // const groupByGrade = Map.groupBy(objArr, (item) => item.grade);
-    // return groupByGrade;
     const gradeStats = {};
     for (const student of objArr) {
-        const { grade, age } = student;
+        const { grade, age } = student; // Object Destructuring
         if (!gradeStats[grade]) {
             gradeStats[grade] = { totalAge: 0, count: 0 };
         }

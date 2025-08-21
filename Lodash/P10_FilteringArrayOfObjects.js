@@ -7,7 +7,6 @@ let data = [
 let propertyName = "age";
 let propertyValue = 30;
 
-// Filtering the array of objects based on a specific property value
 let filteredData = _.filter(data, item => item[propertyName] === propertyValue);
 console.log(filteredData);
 

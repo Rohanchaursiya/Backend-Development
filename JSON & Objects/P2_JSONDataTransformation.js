@@ -13,3 +13,4 @@ let jsonArray = [
 ];
 
 console.log(transformData(jsonArray));
+console.log(jsonArray)

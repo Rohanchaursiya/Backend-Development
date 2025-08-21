@@ -13,6 +13,7 @@ function deepFreeze(obj) {
     }
     return obj;
 }
+
 let obj = {
     name: "John",
     details: {
