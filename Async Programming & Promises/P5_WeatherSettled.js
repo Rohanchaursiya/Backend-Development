@@ -1,36 +1,23 @@
-// Function to simulate fetching current weather
 function fetchCurrentWeather() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            Math.random() > 0.3 // 70% chance to succeed
+            Math.random() > 0.3
                 ? resolve({ temperature: 25, condition: "Sunny" })
                 : reject("Failed to fetch current weather");
         }, 1000);
     });
 }
 
-// Function to simulate fetching weather forecast
 function fetchWeatherForecast() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             Math.random() > 0.3
-                ? resolve({
-                    forecast: [
-                        "Sunny",
-                        "Cloudy",
-                        "Rainy",
-                        "Sunny",
-                        "Sunny",
-                        "Thunderstorm",
-                        "Rainy",
-                    ],
-                })
+                ? resolve({ forecast: ["Sunny", "Cloudy", "Rainy", "Sunny", "Sunny", "Thunderstorm", "Rainy"], })
                 : reject("Failed to fetch weather forecast");
         }, 2000);
     });
 }
 
-// Function to simulate fetching air quality
 function fetchAirQuality() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -41,7 +28,6 @@ function fetchAirQuality() {
     });
 }
 
-// Dashboard function using Promise.allSettled
 function fetchDashboardData() {
     Promise.allSettled([
         fetchCurrentWeather(),
@@ -61,5 +47,5 @@ function fetchDashboardData() {
     });
 }
 
-// Run the simulation
+
 fetchDashboardData();
