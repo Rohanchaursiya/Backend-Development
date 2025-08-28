@@ -14,7 +14,7 @@ function fetchCurrentWeather() {
 function fetchWeatherForecast() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const fetchWeather = false;
+            const fetchForecast = false;
             if (fetchWeather) {
                 resolve({ forecast: ["Sunny", "Cloudy", "Rainy", "Sunny", "Sunny", "Thunderstorm", "Rainy"], })
             } else {
@@ -27,7 +27,7 @@ function fetchWeatherForecast() {
 function fetchAirQuality() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const fetchWeather = true;
+            const fetchQuality = true;
             if (fetchWeather) {
                 resolve({ aqi: 42, category: "Good" })
             } else {
