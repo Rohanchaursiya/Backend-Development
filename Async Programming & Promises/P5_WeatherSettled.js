@@ -14,13 +14,13 @@ function fetchCurrentWeather() {
 function fetchWeatherForecast() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const fetchForecast = false;
+            const fetchForecast = true;
             if (fetchForecast) {
-                resolve({ forecast: ["Sunny", "Cloudy", "Rainy", "Sunny", "Sunny", "Thunderstorm", "Rainy"], })
+                resolve()
             } else {
                 reject("Failed to fetch weather forecast");
             }
-        }, 2000);
+        }, 1000);
     });
 }
 
@@ -45,7 +45,7 @@ function fetchDashboardData() {
     ]).then((results) => {
         results.forEach((result, index) => {
             if (result.status === "fulfilled") {
-                console.log(`Promise ${index + 1} fulfilled with value:`, result.value);
+                console.log(`Promise ${index + 1} fulfilled with value:`, result?.value);
             } else {
                 console.log(`Promise ${index + 1} rejected with reason:`, result.reason);
             }
