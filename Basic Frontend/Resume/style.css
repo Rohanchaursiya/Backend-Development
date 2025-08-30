@@ -1,0 +1,67 @@
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+  background: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume {
+  width: 210mm;
+  background: #fff;
+  padding: 10mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  color: rgb(67, 131, 234);
+  text-align: center;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.contact i {
+  margin: 0px 4px 0px 0px;
+  color: rgb(67, 131, 234);
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 5px 0px 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+p, li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 20px;
+}
