@@ -1,0 +1,63 @@
+1. Initialize a New Project
+    mkdir <---Project Name--->
+    cd <---Project Name--->
+    npm init -y
+    npm install typescript @types/node --save-dev
+    npx tsc --init
+
+    What these do:
+        typescript adds the TypeScript compiler (tsc)
+        @types/node provides Node.js type definitions
+        npx tsc --init creates a tsconfig.json config file
+
+2. Create a Source Folder
+    mkdir src
+
+3. Configure TypeScript
+
+    {
+        "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "sourceMap": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+    }
+
+    Option highlights:
+        rootDir/outDir: keeps source (src) separate from build output (dist).
+        strict: enables the safest type checking.
+        esModuleInterop: smoother interop with CommonJS/ES modules.
+        sourceMap: generate maps for debugging compiled code.
+
+4. Install Runtime and Dev Dependencies
+    Install Express for HTTP handling and helpful dev tools:
+
+    npm install express body-parser
+    npm install --save-dev ts-node nodemon @types/express
+
+
+5. Project Structure
+
+    my-ts-node-app/
+        src/
+            server.ts
+        middleware/
+            auth.ts
+        entity/
+            User.ts
+        config/
+            database.ts
+        dist/
+        node_modules/
+        package.json
+        tsconfig.json
